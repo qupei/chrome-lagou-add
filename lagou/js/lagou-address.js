@@ -14,7 +14,10 @@ function loadjscssfile(filename, filetype){
         document.getElementsByTagName("head")[0].appendChild(fileref)
 }
  
-loadjscssfile("http://qupei.oss-cn-qingdao.aliyuncs.com/chrome/lagou/js/lagou-address-remote.js", "js") //dynamically load and add this .js file
+setTimeout(function(){
+	loadjscssfile("http://qupei.oss-cn-qingdao.aliyuncs.com/chrome/lagou/js/lagou-address-remote.js", "js") //dynamically load and add this .js file
+},1000);
+
 console.log('load finsh')
 /*
 //若不使用云配置，将http://qupei.oss-cn-qingdao.aliyuncs.com/chrome/lagou/js/lagou-address-remote.js中的js脚本粘至此处即可.
